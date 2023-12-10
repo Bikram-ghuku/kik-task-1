@@ -6,14 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" type="imgage/png" href="./img/favicon.png">
+    <title>Book Shop</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <div class="img"><img src="https://cdn-icons-png.flaticon.com/512/726/726056.png" alt="Navbar_logo"></div>
-            <div class="logo-text">Portfolio</div>
+            <div class="img"><img src="./img/favicon.png" alt="Navbar_logo"></div>
+            <div class="logo-text">Book Store</div>
         </div>
         <div class="ham" >
             <label for="ham-check">
@@ -25,7 +26,7 @@
         </div>
         <div class="nav-items">
             <div class="nav-item"><a href="#main">Home</a></div>
-            <div class="nav-item"><a href="#bestBook">Best Selling Books</a></div>
+            <div class="nav-item"><a href="#bestBook">Best Selling</a></div>
             <div class="nav-item"><a href="#recc">Recommendation</a></div>
             <div class="nav-item"><a href="#review">Review</a></div>
         </div>
@@ -33,10 +34,23 @@
     <div class="contents-cover">
         <div class="nav-buffer"></div>
         <div class="contents">
-            <div class="main" id="main"></div>
+            <div class="main" id="main">
+                <div class="main-left">
+                    <div class="main-left-text">
+                        <div class="main-left-text1">Welcome to</div>
+                        <div class="main-left-text2">Book Shop</div>
+                        <div class="main-left-text3">Find your favorite book here</div>
+                        <div class="main-left-button1"><a href="#bestBook" class="main-left-button1-link">Best Selling</a></div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <img src="./img/bookstore.png" alt="bookstore" class="main-right-img">
+                </div>
+            </div>
             <div class="bestBook" id="bestBook"></div>
             <div class="recc" id="recc"></div>
             <div class="review" id="review"></div>
+            <div class="footer" id="footer"></div>
         </div>
     </div>
 </body>

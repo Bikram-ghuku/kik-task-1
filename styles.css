@@ -89,7 +89,62 @@ body{
 .main{
     height: 93vh;
     width: 98vw;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left{
+    width: 49vw;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right{
+    width: 49vw;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-left-text1{
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.main-left-text2{
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+.main-left-text3{
+    font-size: 2vh;
+    font-weight: bold;
+    padding-bottom: 5vh;
+}
+
+.main-left-button1{
+    width: 20vw;
+    height: 4vh;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 2vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.main-left-button1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-right-img{
+    scale: 1.5;
 }
 
 /*bestbook*/
@@ -111,6 +166,12 @@ body{
     height: 93vh;
     width: 98vw;
     background-color: yellow;
+}
+
+/*footer*/
+.footer{
+    height: 93vh;
+    width: 98vw;
 }
 
 @media screen and (max-width: 768px){
@@ -139,6 +200,7 @@ body{
     }
 
     .ham-img{
+        text-decoration: none;
         display: block;
     }
 
