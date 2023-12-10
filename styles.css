@@ -151,7 +151,96 @@ body{
 .bestBook{
     height: 93vh;
     width: 98vw;
-    background-color: blue;
+}
+
+.bestBook-title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    color: #30C2EC;
+}
+
+.bestBook-section{
+    height: 86vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bestBook-book{
+    height: 82vh;
+    width: 20vw;
+    background-color: white;
+    padding-left: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    overflow-y: hidden;
+}
+
+.bestBook-book:hover{
+    height: 90vh;
+    width: 20vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.bestBook-book-img{
+    border: solid black 1px;
+    height: 65%;
+}
+
+.bestBook-book-text1{
+    font-size: 2.5vh;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.bestBook-book-text2{
+    height: 12vh;
+    font-size: 1.5vh;
+    width: 20vw;
+    text-align: center;
+}
+
+.bestBook-book-button-wrapper{
+    height: 7vh;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.bestBook-book-button{
+    width: 10vw;
+    height: 3vh;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+    padding-top: 0.5vh;
+}
+
+.bestBook-book-knowMore{
+    padding-top: 0.5vh;
+}
+
+.bestBook-book-knowMore-button{
+    width: 20vw;
+    height: 3vh;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
 }
 
 /*recommendation*/
