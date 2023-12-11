@@ -377,7 +377,179 @@ body{
 .review{
     height: 93vh;
     width: 98vw;
-    background-color: yellow;
+}
+
+.review-title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    color: #30C2EC;
+}
+
+.review-inp-title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.review-inp{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-inp-left{
+    height: 30vh;
+    width: 49vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.review-inp-left input[type=text]{
+    height: 5vh;
+    width: 45vw;
+    border: solid black 1px;
+    padding-left: 2vw;
+}
+
+.review-inp-right{
+    height: 30vh;
+    width: 49vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.review-inp-right textarea{
+    height: 10vh;
+    width: 40vw;
+    border: solid black 1px;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
+
+.review-inp-right button{
+    height: 5vh;
+    width: 10vw;
+    border: solid black 1px;
+    background-color: #30C2EC;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+    border-radius: 2vw;
+}
+
+.review-inp-btn-wrapper{
+    height: 5vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-inp-right button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hRule{
+    outline: solid #f0f0f0;
+    width: 90%;
+}
+
+.sep{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.review-data-title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.review-data{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 5vh;
+    height: 38vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+.review-data-item{
+    height: 34vh;
+    width: 20vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: solid black 1px;
+    border-radius: 2vh;
+}
+
+.review-data-item:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease-in-out;
+}
+
+.review-data-item-img-wrapper{
+    padding-bottom: 1vh;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.review-data-item-img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    outline: solid #30C2EC 5px;
+}
+
+.review-data-item-name{
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.review-data-item-email{
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.review-data-item-desc{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
 }
 
 /*footer*/
@@ -547,11 +719,12 @@ body{
     }
 
     .bestBook-book-text3-1{
-        font-size: 1.5vh;
+        padding-top: 0.5vh;
+        font-size: 1.6vh;
     }
 
     .bestBook-book-text3-2{
-        font-size: 1.5vh;
+        font-size: 1.1vh;
     }
 
     .bestBook-book-text3-3{
@@ -620,4 +793,63 @@ body{
         font-weight: bold;
     }
 
+    /*review*/
+
+    .review{
+        height: 94vh;
+        width: 96vw;
+    }
+
+    .review-title{
+        height: 8vh;
+    }
+
+    .review-inp-title{
+        height: 4vh;
+    }
+
+    .review-inp-left{
+        width: 40vw;
+    }
+
+    .review-inp-left input[type=text]{
+        width: 35vw;
+    }
+
+    .review-inp-right{
+        width: 44vw;
+    }
+
+    .review-inp-right button{
+        width: 34vw;
+    }
+
+    .review-inp-right textarea{
+        height: 10vh;
+    }
+
+    .review-data{
+        gap: 5vw;
+    }
+
+    .review-data-item-name{
+        height: 2vh;
+        font-size: 1.5vh;
+    }
+    
+    .review-data-item-email{
+        height: 2vh;
+        font-size: 1vh;
+    }
+
+    .review-data-item-desc{
+        height: 5vh;
+        font-size: 1.1vh;
+    }
+    .review-data-item-img-wrapper{
+        padding-bottom: 2vh;
+    }
+    .review-data-item-img{
+        outline: solid #30C2EC 2px;
+    }
 }
