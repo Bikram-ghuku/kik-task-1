@@ -77,8 +77,13 @@ body{
 
 .contents{
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 93vh;
+}
+
+.contents > div{
+    scroll-snap-align: start;
 }
 
 .ham{
@@ -243,6 +248,12 @@ body{
     padding-top: 0.5vh;
 }
 
+.bestBook-book-button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
 .bestBook-book-knowMore{
     padding-top: 0.5vh;
 }
@@ -256,13 +267,110 @@ body{
     font-size: 1.5vh;
     color: white;
     text-align: center;
+    cursor: pointer;
+}
+
+.bestBook-book-knowMore-button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
 }
 
 /*recommendation*/
 .recc{
     height: 93vh;
     width: 98vw;
-    background-color: green;
+}
+
+.recc-title{
+    font-size: 5vh;
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-weight: bolder;
+    color: #30C2EC;
+}
+
+.recc-search-bar{
+    height: 7vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recc-search-bar input[type=text]{
+    height: 5vh;
+    width: 50vw;
+    border: solid black 1px;
+    border-radius: 2vw 0vw 0vw 2vw;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
+
+.recc-search-bar button{
+    height: 5vh;
+    width: 5vw;
+    border: solid black 1px;
+    border-radius: 0vw 2vw 2vw 0vw;
+    background-color: #30C2EC;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.recc-search-bar button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.recc-books-section{
+    height: 78vh;
+    width: 96vw;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    gap: 2vh;
+}
+
+.recc-book{
+    outline: black solid 1px;
+    height: 34vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.recc-book:hover{
+    height: 38vh;
+    width: 20vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.recc-book-img-wrapper{
+    height: 28vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recc-book-img{
+    border: solid black 1px;
+    height: 24vh;
+    width: 10vw;
+}
+
+.recc-book-text1{
+    width: 20vw;
+    text-align: center;
+    height: 4vh;
+    padding-top: 3vh;
+    font-size: 2vh;
 }
 
 /*review*/
@@ -402,6 +510,7 @@ body{
         height: 40vh;
         width: 40vw;
         margin: 2vw;
+        border-radius: 1vh;
     }
 
     .bestBook-book:hover{
@@ -455,4 +564,60 @@ body{
         width: 100%;
         gap: 2vh;
     }
+
+    /*recommendation*/
+
+    .recc{
+        height: 94vh;
+        width: 96vw;
+    }
+
+    .recc-title{
+        height: 14vh;
+    }
+
+    .recc-search-bar{
+        height: 10vh;
+        width: 96vw;
+    }
+
+    .recc-search-bar button{
+        width: 10vw;
+    }
+
+    .recc-books-section{
+        height: 70vh;
+        width: 96vw;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .recc-book{
+        height: 19vh;
+        width: 20vw;
+        margin: 2vw;
+    }
+
+    .recc-book:hover{
+        height: 21vh;
+        width: 20vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .recc-book-img{
+        height: 10vh;
+    }
+
+    .recc-book-img-wrapper{
+        height: 14vh;
+        padding-top: 0;
+    }
+
+    .recc-book-text1{
+        height: 2vh;
+        padding: 0;
+        font-size: 1.2vh;
+        font-weight: bold;
+    }
+
 }
