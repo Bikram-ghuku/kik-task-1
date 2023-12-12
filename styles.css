@@ -590,11 +590,44 @@ body{
     color: black;
 }
 
+.footer-socials-item a:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
+}
+
 .footer-po-wrap, .footer-p2-wrap, .footer-social-wrap{
     padding-top: 5vh;
     height: 93vh;
     width: 100%;
     gap: 2vh;
+}
+
+.footer-socials-item-button{
+    margin-top: 4vh;
+    height: 5vh;
+    width: 15vh;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 5vw;
+    font-size: 2vh;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-socials-item-button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer-p2-text a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-p2-text a:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1360px){
